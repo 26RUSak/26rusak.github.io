@@ -7,3 +7,9 @@ input {
     position: relative;
     z-index: 1;
 }
+#cheapest-ticket {
+    display: none;
+}
+#cheapest-ticket.show {
+    display: block;
+}
