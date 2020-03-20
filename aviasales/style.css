@@ -3,13 +3,32 @@
     position: relative;
     z-index: 2;
 }
+
 input {
     position: relative;
     z-index: 1;
 }
-#cheapest-ticket {
+
+.dropdown__cities-from,
+.dropdown__cities-to,
+#cheapest-ticket,
+#other-cheapest-tickets {
     display: none;
 }
-#cheapest-ticket.show {
+
+.show {
     display: block;
+}
+
+.other-cheapest-ticket,
+.cheapest-ticket {
+    max-width: 700px;
+    margin: auto;
+}
+
+.ticket {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
