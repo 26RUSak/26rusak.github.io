@@ -282,6 +282,14 @@ const renderCheap = (response, date, cheapestTicket, otherCheapestTicket) => {
     renderCheapYear(cheapTicketYear[arName], otherCheapestTicket);
 }
 
+// Событие для скрытия списка городов при убирании фокуса у инпута откуда\куда
+document.addEventListener('click', ({ target }) => {
+    if (!target.classList.contains('input__cities-from') && !target.classList.contains('input__cities-to')) {
+        dropdownCitiesFrom.classList.remove('show');
+        dropdownCitiesTo.classList.remove('show');
+    }
+});
+
 // Событие для показа списка городов при фокусе в инпут откуда
 inputCitiesFrom.addEventListener('focus', (e) => {
     dropdownCitiesFrom.classList.add('show');
@@ -289,7 +297,6 @@ inputCitiesFrom.addEventListener('focus', (e) => {
 
 // Событие для скрытия списка городов при убирании фокуса у инпута откуда
 inputCitiesFrom.addEventListener('focusout', (e) => {
-    dropdownCitiesFrom.classList.remove('show');
 });
 
 // Событие для показа списка городов при фокусе в инпут куда
@@ -299,7 +306,6 @@ inputCitiesTo.addEventListener('focus', (e) => {
 
 // Событие для скрытия списка городов при убирании фокуса у инпута откуда
 inputCitiesTo.addEventListener('focusout', (e) => {
-    dropdownCitiesTo.classList.remove('show');
 });
 
 // Событие для показа билетов
