@@ -17,7 +17,7 @@ input {
 }
 
 .show {
-    display: block;
+    display: block !important;
 }
 
 .other-cheapest-ticket,
