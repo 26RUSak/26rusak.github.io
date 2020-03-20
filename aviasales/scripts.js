@@ -284,8 +284,10 @@ const renderCheap = (response, date, cheapestTicket, otherCheapestTicket) => {
 
 // Событие для скрытия списка городов при убирании фокуса у инпута откуда\куда
 document.addEventListener('click', ({ target }) => {
-    if (!target.classList.contains('input__cities-from') && !target.classList.contains('input__cities-to')) {
+    if (!target.classList.contains('input__cities-from')) {
         dropdownCitiesFrom.classList.remove('show');
+    }
+    if (!target.classList.contains('input__cities-to')) {
         dropdownCitiesTo.classList.remove('show');
     }
 });
