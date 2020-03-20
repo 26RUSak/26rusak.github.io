@@ -19,7 +19,7 @@ const
     PROXY = 'https://cors-anywhere.herokuapp.com/',
     CITY_API = 'dataBase/cities.json',
     API_KEY = 'd7ff54e89b58d144eaa8da9acd8e95de',
-    CALENDAR = 'http://min-prices.aviasales.ru/calendar_preload',
+    CALENDAR = 'https://min-prices.aviasales.ru/calendar_preload',
     MAX_COUNT = 5;
 // const city = ['Москва', 'Санкт-Петербург', 'Минск', 'Караганда', 'Челябинск', 'Керч', 
 //     'Волгоград', 'Самара', 'Днепропетровск', 'Екатеринбург', 'Одесса', 'Ухань', 
