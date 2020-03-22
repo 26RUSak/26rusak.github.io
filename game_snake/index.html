@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content='ie=edge' >
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Google Fonts Roboto	 -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<title>Змейка</title>
+</head>
+
+<body>
+    <div class="wrapper">
+      <header>
+        <h1>Snake</h1>
+      </header>
+      <main>
+
+        <section>
+  
+          <div class="game-wrapper">
+            <div id="info" class="info">
+  
+              <span class="score"><i>🍏</i> Score: <span id="score">0</span></span>
+              <span class="length"><i>🐍</i><span id="length">0</span></span>
+              <span class="speed"><i>⚡</i> Speed: <span id="speed">0</span></span>
+  
+            </div>
+  
+            <div id="game" class="game">
+  
+              <!-- 			Snake Field			 -->
+  
+            </div>
+          </div>
+  
+        </section>
+  
+        <aside>
+          <button class="pause" id="pause">⏸️ Pause</button>
+          <button class="play" id="play">▶️ Play</button>
+          <button class="new" id="new">🔄 New game</button>
+          
+          <div class="scores-list">
+            
+            <div id="best-block" class="best">
+              <span>👑 Best: <span id="best-score" class="best-item"></span></span>
+            </div>
+            
+            <div id="last-block" class="last">
+              <span>📓 Last:</span>
+              <div id="last-scores" class="last-item"></div>
+            </div>
+            
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <div class="copyrigth">© 2020<a href="#" target="_blank">@keshapudelev</a></div>
+        <div class="share">
+          <a href="#" id="vk" target="_blank">vk</a>
+          <a href="#" id="fb" target="_blank">fb</a>
+          <a href="#" id="tw" target="_blank">tw</a>
+        </div>
+      </footer>
+    </div>
+	  <script type="text/javascript" src="./scripts.js"></script>
+  </body>
+</html>
